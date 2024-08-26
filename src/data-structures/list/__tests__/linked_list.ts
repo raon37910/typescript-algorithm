@@ -99,11 +99,11 @@ export function testLinkedList(LinkedList: LinkedListConstructor) {
     })
 
     it('should throw error for pop when list is empty', () => {
-      expect(() => list.pop()).toThrowError('Index out of bounds')
+      expect(() => list.pop()).toThrow('Index out of bounds')
     })
 
     it('should return null for removeTail when list is empty', () => {
-      expect(() => list.removeTail()).toThrowError('Index out of bounds')
+      expect(() => list.removeTail()).toThrow('Index out of bounds')
     })
   })
 }
